@@ -23,4 +23,12 @@ propably take around two hours. Since I'm so unbelievably lazy, I'm weighing
 my options: connecting the LEDs directly to the 74hc595 shift registers or
 using different values for the columns.
 
+2012-01-05 - 17:00 I did connect the leds without current limiting resistor
+as Bernd recommended. They are rather bright this way, but once they're
+operated at 1/8th duty cycle they will be much dimmer. A basic shift test
+and a test for the display routine are checked in. The latter basically
+verifies that the output latch of the shift register lags one cycle behind the
+main shift register.
+
+
 
